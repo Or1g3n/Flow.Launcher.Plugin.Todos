@@ -197,6 +197,7 @@ namespace Flow.Launcher.Plugin.Todos
                         SubTitle = subTitleFormatter?.Invoke(t) ?? $"{ToRelativeTime(t.CreatedTime)} | Copy to clipboard",
                         IcoPath = GetFilePath(t.Completed ? @"ico\done.png" : @"ico\todo.png"),
                         Score = score,
+                        ContextData = t, // Added todo to context data for purpose of context menu actions
                         Action = c =>
                         {
                             return itemAction?.Invoke(c, t) ?? PerformDefaultAction(t);
