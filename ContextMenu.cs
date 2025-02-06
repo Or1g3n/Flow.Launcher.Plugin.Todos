@@ -69,7 +69,7 @@ namespace Flow.Launcher.Plugin.Todos
                     }
 
                     //Context.API.ChangeQuery($"td ", true);
-                    return false;  // Return true to indicate that the action was performed
+                    return false;
                 }
             };
         }
