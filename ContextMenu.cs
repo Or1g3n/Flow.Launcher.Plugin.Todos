@@ -84,7 +84,7 @@ namespace Flow.Launcher.Plugin.Todos
                 Action = _ =>
                 {
                     // Implement the logic for editing the todo
-                    Context.API.ChangeQuery($"-e {todo.Content}", true);
+                    //Context.API.ChangeQuery($"-e {todo.Content}", true);
                     return false;
                 }
             };
@@ -109,6 +109,7 @@ namespace Flow.Launcher.Plugin.Todos
                         _todos.Pin(todo);
                     }
 
+                    //Context.API.ChangeQuery($"td ", true);
                     return false;
                 }
             };
