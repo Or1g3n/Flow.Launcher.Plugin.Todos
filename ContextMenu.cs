@@ -38,16 +38,6 @@ namespace Flow.Launcher.Plugin.Todos
         {
             var contextMenus = new List<Result>();
 
-            //contextMenus.Add(
-            //    new Result {
-            //        Title = selectedResult.Title,
-            //        SubTitle = "Hello",
-            //        IcoPath = GetFilePath(),
-            //    }
-            //);
-
-            //Alert("wow", selectedResult.ContextData?.GetType().Name); 
-
             // Check if the selected result's ContextData is a Todo item
             if (selectedResult.ContextData is Todo todo)
             {
@@ -94,7 +84,7 @@ namespace Flow.Launcher.Plugin.Todos
                 Action = _ =>
                 {
                     // Implement the logic for editing the todo
-                    Context.API.($"-e {todo.Content}", true);
+                    Context.API.ChangeQuery($"-e {todo.Content}", true);
                     return false;
                 }
             };
