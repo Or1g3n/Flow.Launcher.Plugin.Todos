@@ -4,7 +4,7 @@
   "Name": "Todos",
   "Description": "A simple yet effective todo app.",
   "Author": "Or1g3n (originally by caoyue)",
-  "Version": "3.0.7",
+  "Version": "3.0.8",
   "Language": "csharp",
   "Website": "https://github.com/Or1g3n/Flow.Launcher.Plugin.Todos",
   "ExecuteFileName": "Flow.Launcher.Plugin.Todos.dll",
